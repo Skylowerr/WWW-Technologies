@@ -3,7 +3,7 @@
 Using `clamp()` allows for **fluid typography and scaling** without the need for multiple "break points." While media queries create stepped changes (e.g., jumping from 16px to 20px at a specific width), `clamp(min, preferred, max)` ensures a smooth transition between values, making the UI feel more organic and reducing the amount of CSS code.
 
 ### 2. Why did we use `minmax()` instead of fixed columns?
-`minmax()` provides **intrinsic web design** capabilities. Unlike fixed columns (e.g., `200px`), `minmax(200px, 1fr)` allows a column to shrink to a minimum functional size but also expand to fill available space. This prevents layout breaking on smaller screens and ensures the grid adapts to the content's needs automatically.
+Unlike fixed columns, it is used to ensure that the image does not become distorted when the screen frame changes.
 
 ### 3. Why is it important to implement a mobile-first website?
 Mobile-first design is crucial because it forces us to prioritize **essential content and performance**. It is technically easier to scale up a simple layout for desktops (progressive enhancement) than it is to shrink a complex desktop layout for mobile (graceful degradation).
